@@ -7,6 +7,8 @@ export const GlobalStyle = createGlobalStyle`
         --white: #ffffff;
 
         --background: #0F0000;
+
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
     * {
@@ -14,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;               
     }
+
 
     html {
         @media (max-width: 1080px) {
