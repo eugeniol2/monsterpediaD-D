@@ -41,7 +41,6 @@ export type MonsterFactoryType = {
     intelligence_save?: string;
     wisdom_save?: string;
     charisma_save?: string;
-    perception?: string;
   };
   skills: {
     athletics?: string;
@@ -59,7 +58,12 @@ export type MonsterFactoryType = {
       damage_bonus?: string;
     }
   ];
-  reactions?: string;
+  reactions?: [
+    {
+      name?: string;
+      desc?: string;
+    }
+  ];
   legendaryDesc?: string;
   legendaryActions: [
     {

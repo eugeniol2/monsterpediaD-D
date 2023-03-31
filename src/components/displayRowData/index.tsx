@@ -4,17 +4,25 @@ import { Container } from "./styles";
 export const DisplayRowData = ({
   title,
   value,
+  isActions,
+  isSavingThrow,
 }: {
-  title: string;
+  title?: string;
   value?: string;
+  isActions?: boolean;
+  isSavingThrow?: boolean;
 }) => {
-  if (!value) {
+  if (!value && !isSavingThrow) {
     return null;
   }
 
   return (
-    <Container>
-      <h3>{title}:</h3> <p>{value}</p>
+    <Container isActions={isActions}>
+      <h3>
+        - {title}
+        {!isActions && ":"}
+      </h3>
+      <p>{isSavingThrow ? "Nonexistent" : value}</p>
     </Container>
   );
 };

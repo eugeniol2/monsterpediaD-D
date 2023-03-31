@@ -44,7 +44,6 @@ export function MonsterFactory(response: any): MonsterFactoryType {
       intelligence_save: response.intelligence_save,
       wisdom_save: response.wisdom_save,
       charisma_save: response.charisma_save,
-      perception: response.perception,
     },
     skills: {
       athletics: response.skills?.athletics,

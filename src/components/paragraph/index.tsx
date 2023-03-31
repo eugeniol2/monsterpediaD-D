@@ -7,6 +7,10 @@ interface ParagraphProps {
 }
 
 export const Paragraph: React.FC<ParagraphProps> = ({ title, children }) => {
+  console.log(children);
+  if (!children) {
+    return null;
+  }
   return (
     <Container>
       <h2>{title}</h2>
