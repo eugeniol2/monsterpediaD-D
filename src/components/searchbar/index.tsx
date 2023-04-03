@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AiOutlineSearch } from "react-icons/Ai";
+import { AiOutlineSearch } from "react-icons/ai";
 import {
   Container,
   CustomInput,
