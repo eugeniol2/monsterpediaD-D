@@ -37,7 +37,7 @@ export function MonsterFactory(response: any): MonsterFactoryType {
       wisdom: response.wisdom,
       charisma: response.charisma,
     },
-    Saving_throws: {
+    saving_throws: {
       strength_save: response.strength_save,
       dexterity_save: response.dexterity_save,
       constitution_save: response.constitution_save,

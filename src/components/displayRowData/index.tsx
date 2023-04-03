@@ -1,28 +1,30 @@
 import React from "react";
 import { Container } from "./styles";
 
-export const DisplayRowData = ({
-  title,
-  value,
-  isActions,
-  isSavingThrow,
-}: {
+interface DisplayRowDataProps {
   title?: string;
   value?: string;
-  isActions?: boolean;
-  isSavingThrow?: boolean;
+  disableTitle?: boolean;
+}
+
+export const DisplayRowData: React.FC<DisplayRowDataProps> = ({
+  title,
+  value,
+  disableTitle,
 }) => {
-  if (!value && !isSavingThrow) {
+  const isValueUndefined = !value;
+
+  if (isValueUndefined) {
     return null;
   }
 
   return (
-    <Container isActions={isActions}>
+    <Container hasTitle={disableTitle}>
       <h3>
         - {title}
-        {!isActions && ":"}
+        {!disableTitle && ":"}
       </h3>
-      <p>{isSavingThrow ? "Nonexistent" : value}</p>
+      <p>{value}</p>
     </Container>
   );
 };

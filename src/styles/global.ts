@@ -34,4 +34,7 @@ export const GlobalStyle = createGlobalStyle`
     *:focus {
         outline: none;
     }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
 `;

@@ -1,18 +1,19 @@
 import styled, { css } from "styled-components";
 
 interface ContainerProps {
-  isActions?: boolean;
+  hasTitle?: boolean;
 }
 
 export const Container = styled.div<ContainerProps>`
-  ${({ isActions }) =>
-    isActions &&
+  ${({ hasTitle }) =>
+    hasTitle &&
     css`
       margin-bottom: 16px;
     `}
-  display: ${({ isActions }) => (isActions ? "block" : "flex")};
+  display: ${({ hasTitle }) => (hasTitle ? "block" : "flex")};
   align-items: center;
   gap: 8px;
+  text-transform: capitalize;
   > p {
     font-size: 18px;
   }

@@ -1,8 +1,11 @@
 export type MonsterFactoryType = {
   indexes: {
+    [key: string]: string | undefined;
+
     slug: string;
   };
   characteristics: {
+    [key: string]: string | undefined;
     name: string;
     type: string;
     size: string;
@@ -13,6 +16,7 @@ export type MonsterFactoryType = {
     hit_dice: string;
   };
   defenses: {
+    [key: string]: string | undefined;
     armor_class: string;
     armor_desc: string;
     hit_points: string;
@@ -22,11 +26,13 @@ export type MonsterFactoryType = {
     damage_vulnerabilities?: string;
   };
   speed: {
+    [key: string]: string | undefined;
     swim?: string;
     Burrow?: string;
     walk?: string;
   };
   stats: {
+    [key: string]: string | undefined;
     strength?: string;
     dexterity?: string;
     constitution?: string;
@@ -34,7 +40,8 @@ export type MonsterFactoryType = {
     wisdom?: string;
     charisma?: string;
   };
-  Saving_throws: {
+  saving_throws: {
+    [key: string]: string | undefined;
     strength_save?: string;
     dexterity_save?: string;
     constitution_save?: string;
@@ -43,6 +50,7 @@ export type MonsterFactoryType = {
     charisma_save?: string;
   };
   skills: {
+    [key: string]: string | undefined;
     athletics?: string;
     stealth?: string;
     history?: string;
