@@ -8,7 +8,6 @@ interface MonsterSection {
 }
 
 export const MonsterSection: React.FC<MonsterSection> = ({ monster }) => {
-  console.log(monster);
   return (
     <Container>
       <Header>

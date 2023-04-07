@@ -13,3 +13,10 @@ export const Container = styled.div`
   font-size: 32px;
   color: white;
 `;
+
+export const TitleContaiener = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+`;
