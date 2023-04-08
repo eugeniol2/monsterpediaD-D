@@ -29,6 +29,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background: var(--background);
         -webkit-font-smoothing: antialiased;
+        min-width: 1024px;
     }
 
     *:focus {
